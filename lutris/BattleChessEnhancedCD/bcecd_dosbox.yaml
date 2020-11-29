@@ -1,0 +1,17 @@
+custom-name: Battle Chess - Enhanced CD-ROM (DOS)
+files:
+- conf: https://github.com/doctorjei/installers/raw/main/lutris/BattleChessEnhancedCD/bcecd_dosbox.conf
+- cd_cue: N/A:Please select the CD CUE image
+- cd_bin: N/A:Please select the CD BIN/RAW/DAT image
+game:
+  main_file: $GAMEDIR/bcecd_dosbox.conf
+installer:
+- move:
+    dst: $GAMEDIR
+    src: conf
+- move:
+    dst: $GAMEDIR/battlechess.cue
+    src: cd_cue
+- move:
+    dst: $GAMEDIR
+    src: cd_bin
